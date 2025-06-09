@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'pages')));   // Para archivos HTML
 
 // Ruta principal CORREGIDA
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'pages', 'indexHome.html')); // Asegúrate que coincide con el nombre real
+  res.sendFile(path.join(__dirname, 'pages', 'index.html')); // Asegúrate que coincide con el nombre real
 });
 app.get('/Menu', (req, res) => { 
   res.sendFile(path.join(__dirname, 'pages', 'indexMenu.html'));
