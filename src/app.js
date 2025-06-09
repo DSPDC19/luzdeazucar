@@ -5,17 +5,21 @@ import { fileURLToPath } from 'url';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Esto es para obtener la ruta absoluta del directorio actual
+// Obtener rutas absolutas CORRECTAMENTE
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Sirve archivos estáticos desde 'src/public'
-app.use(express.static(path.join(__dirname, 'pages')));
+// Configurar archivos estáticos (usa path.join para evitar errores de rutas)
+app.use(express.static(path.join(__dirname, 'public')));  // Para CSS, JS, imágenes
+app.use(express.static(path.join(__dirname, 'pages')));   // Para archivos HTML
 
-// Ruta por defecto para enviar el indexHome.html cuando se accede a la raíz
+// Ruta principal CORREGIDA
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'pages', 'indexHome.html'));
+  res.sendFile(path.join(__dirname, 'pages', 'indexHome.html')); // Asegúrate que coincide con el nombre real
 });
+app.get('/Menu', (req, res) => { 
+  res.sendFile(path.join(__dirname, 'pages', 'indexMenu.html'));
+}); 
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);

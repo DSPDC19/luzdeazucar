@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Mi página web local</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/style_Inicio.css" type="text/css">
 </head>
-<body>
-    <h1>¡Hola desde mi página web local!</h1>
+    <header>
+        <!--Primera parte de la barra de navegacion -->
+        <div class="top-nav">
+            <!--Location links-->
+            <div class="location-nav"> 
+                <img src="./img/Location.png" alt="LocationIcon" id="LocationIcon">
+                <a href="https://mapcarta.com/es/W153866620#:~:text=Universidad%20Apec%20es%20una%20universidad%20en%20Santo%20Domingo,%28DNCD%29%2C%20as%C3%AD%20como%20de%20Hotel%20Barcel%C3%B3%20Santo%20Domingo." id="locationLink">Santo Domingo <br> Av. Maximo Gomez Esq. Mexico</a>
+            </div>
+
+            <!--logo-->
+            <div class="logo-nav">
+                <img src="./img/LogoIcon .jpg" alt="LogoIcon" id="logo-nav">
+            </div>
+            
+            <!--Boton correo-->
+            <div class="correo-nav">
+                <button type="button" class="button-correo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#currentColor">
+                        <path d="M146.67-160q-27 0-46.84-19.83Q80-199.67 80-226.67v-506.66q0-27 19.83-46.84Q119.67-800 146.67-800h666.66q27 0 46.84 19.83Q880-760.33 880-733.33v506.66q0 27-19.83 46.84Q840.33-160 813.33-160H146.67ZM480-454.67 146.67-670v443.33h666.66V-670L480-454.67Zm0-66.66 330.67-212H150l330 212ZM146.67-670v-63.33V-226.67-670Z"/>
+                    </svg> 
+                    ESCRIBENOS
+                </button>
+            </div>
+        </div>
+        <hr class="linea">
+        
+        <!--Opciones de navegacion -->
+        <nav class="main-nav">
+            <ul class="nav-link">
+                <li><a href="/" \ class="active">INICIO</a></li>
+                <li><a href="/Menu">RINCÓN DE AZÚCAR</a></li>
+                <li><a href="#Aboutus">SOBRE NOSOTROS</a></li>
+                <li><a href="#contacto">CONTACTANOS</a></li>
+            </ul>
+           
+            <div class="nav-icon">
+                <button><img src="./img/CarIcon.png" alt="CarIcon"></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-inicio">
+            <article>
+                <h1>Luz de Azúcar</h1>
+                <p>El mejor suspiro del mundo</p>
+                <button class="button">Compra ahora</button>
+            </article>
+        </section>
+
+        <section class="section-ofrecemos">
+            <h1 class="h1-subtitulos">¿Qué Ofrecemos?</h1>
+            <article class="flex">
+                <div class="div-ofrecemos">
+                    <img src="./img/artesanal.jpg" alt="Repostería artesanal">
+                    <h2>Repostería artesanal de alta calidad</h2>
+                    <p>Elaboramos pasteles, cupcakes, galletas y postres con ingredientes frescos y naturales, cuidando cada detalle para ofrecerte un sabor inolvidable.</p>
+                </div>
+                <div class="div-ofrecemos">
+                    <img src="./img/personalizados.jpg" alt="Diseños personalizados">
+                    <h2>Diseños personalizados</h2>
+                    <p>Creamos pasteles únicos para tus celebraciones especiales: cumpleaños, bodas, baby showers, aniversarios y más. ¡Tú lo sueñas, nosotros lo horneamos!</p>
+                </div>
+                <div class="div-ofrecemos">
+                    <img src="./img/sabores.jpg" alt="Variedad de sabores">
+                    <h2>Variedad de sabores y estilos</h2>
+                    <p>Desde los clásicos de chocolate y vainilla hasta opciones innovadoras como red Velvet, tres leches y sabores tropicales. También hacemos opciones veganas y sin gluten.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="section-nuevos">
+            <h1 class="h1-subtitulos">Nuevos productos</h1>
+            <article class="flex">
+                <div id="brownies" class="div-nuevos">
+                    <img src="./img/brownies.png" alt="Brownies con nueces">
+                    <h3>BROWNIE CON NUECES</h3>
+                    <p>Brownies húmedos y chocolatosos, con trozos de nuez que aportan un toque crujiente y delicioso.</p>
+                    <h4>RD$150</h4>
+                    <button class="button">Ordenar</button>
+                </div>
+                <div id="palmeritas" class="div-nuevos">
+                    <img src="./img/palmeritas.png" alt="Palmeritas de azúcar">
+                    <h3>PALMERITAS DE AZÚCAR</h3>
+                    <p>Crujientes y doradas, hechas con hojaldre fino y cubiertas de azúcar caramelizada. Un clásico que nunca falla.</p>
+                    <h4>RD$80</h4>
+                    <button class="button">Ordenar</button>
+                </div>
+                <div id="galletas" class="div-nuevos">
+                    <img src="./img/galleta.png" alt="Galletas con chispas">
+                    <h3>GALLETAS CON CHISPAS</h3>
+                    <p>Tiernas por dentro y ligeramente crujientes por fuera, con abundantes chispas de chocolate en cada bocado.</p>
+                    <h4>RD$100</h4>
+                    <button class="button">Ordenar</button>
+                </div>
+            </article>
+        </section>
+
+        <section class="section-testimonios">
+            <h1 class="h1-subtitulos">Testimonios</h1>
+            <button class="prev-btn">&#8592;</button>
+            <article class="testimonios-carousel" id="testimonios-carousel">
+                
+            </article>
+            <button class="next-btn">&#8594;</button>
+        </section>
+
+        <section class="section-footer">
+            <hr class="hr-footer"> 
+            <article class="flex article-footer">
+                 <div class="div-footer">
+                    <h2>Redes Sociales</h2>
+                    <hr class="hr-con">
+                            <nav>
+                                <ul class="ul">
+                                    <li class="li container">
+                                        <img src="./img/logotipo-de-instagram.png" alt="Instagram Logo" class="img-apps">
+                                        <span>Instagram</span>
+                                    </li>
+                                    <li class="li container">
+                                        <img src="./img/facebook.png" alt="Facebook Logo" class="img-apps ">
+                                        <span>Facebook</span>
+                                    </li>
+                                </ul>
+                            </nav>
+                    </div>
+                <div class="div-footer">
+                    <h2>Visitanos</h2>
+                    <hr class="hr-con">
+                    <p>Av. Móximo Gómez 72, Santo Domingo</p>
+                    <p>Lunes - Viernes: 9:00AM - 5:00PM</p>
+                    <p>Sabado: 9:00AM - 12:00PM</p>
+                </div>
+                <div class="div-footer">
+                <h2>Contactanos</h2>
+                <hr class="hr-con">
+                    <ul>
+                        <li>Tel. (809) 546-5663</li>
+                        <li>(809) 875-2345</li>
+                        <li>Luzdeazucar@gmail.com</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2025, Designed By Grupo No1</p>
+    </footer>
+    <script src="./js/scriptHome.js"></script>
 </body>
 </html>
