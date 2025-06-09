@@ -21,6 +21,11 @@ app.get('/Menu', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'indexMenu.html'));
 }); 
 
+app.get('/Contactanos', (req, res) => { 
+  res.sendFile(path.join(__dirname, 'pages', 'indexContactanos.html'));
+}); 
+
+
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });

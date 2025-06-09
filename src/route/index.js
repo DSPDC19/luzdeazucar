@@ -10,5 +10,9 @@ router.get("/Menu", (req, res) => {
     res.render("./pages/indexMenu");
 });
 
+router.get("/Contactanos", (req, res) => { 
+    res.render("./pages/indexContactanos");
+});
+
 
  export default router;
