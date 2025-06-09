@@ -2,7 +2,7 @@
 
 body{
     margin:0;
-    background-color: #F3F3F3;
+    background-color: #ffffff;
 }
 
 /* contenedor del logo, ubicacion y correo*/
@@ -47,8 +47,7 @@ body{
 }
 
 #logo-nav{
-
-    width: 115px;
+    width: 110px;
     display: block;
 }
 

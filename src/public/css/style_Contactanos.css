@@ -47,7 +47,7 @@ body{
 }
 
 #logo-nav{
-    width: 115px;
+    width: 110px;
     display: block;
 }
 
@@ -170,6 +170,10 @@ body{
 }
 
 .nav-link li a:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-link li a.active::before {
   transform: scaleX(1);
 }
 
