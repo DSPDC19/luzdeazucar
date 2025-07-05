@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #F3F3F3;
+    background-color: #ffffff;
     color: #333;
 }
 
@@ -89,7 +89,7 @@ body {
     z-index: -1;
     transition: 0.5s all ease;
     opacity: 0;
-    color: white
+    color: white;
 }
 
 .button-correo:hover {

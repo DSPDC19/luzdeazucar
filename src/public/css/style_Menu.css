@@ -2,7 +2,7 @@
 
 body{
     margin:0;
-    background-color: #f3f3f3;
+    background-color: #ffffff;
 }
 
 /* contenedor del logo, ubicacion y correo*/
@@ -428,16 +428,15 @@ margin: 0 auto;
 #cardC1 {
   min-width: 248px;
   height: 340px;
-  border-radius: 2%;
-background-image: url('../img/FCC.png');
-background-position: center;
-   background-size: cover;
+  border-radius: 3%;
+  background-image: url('../img/FCC.png');
+  background-position: center;
+  background-size: cover;
   box-shadow: 0 6px 12px rgba(103, 103, 103, 0.1);
-  padding: 16px;
   display: flex;
- align-content: center;
-justify-content:center;
-flex-direction: column;
+  align-content: center;
+  justify-content:center;
+  flex-direction: column;
   flex-shrink: 0;
   margin: 0px 20px 70px 20px;
 
@@ -446,12 +445,11 @@ flex-direction: column;
 #cardC2 {
   min-width: 248px;
   height: 340px;
-  border-radius: 2%;
+  border-radius: 3%;
 background-image: url('../img/domi.png');
 background-position: center;
    background-size: cover;
   box-shadow: 0 6px 12px rgba(103, 103, 103, 0.1);
-  padding: 16px;
   display: flex;
  align-content: center;
 justify-content:center;
@@ -464,12 +462,11 @@ flex-direction: column;
 #cardC3 {
   min-width: 248px;
   height: 340px;
-  border-radius: 2%;
+  border-radius: 3%;
 background-image: url('../img/tiramisu.png');
 background-position: center;
    background-size: cover;
   box-shadow: 0 6px 12px rgba(103, 103, 103, 0.1);
-  padding: 16px;
   display: flex;
  align-content: center;
 justify-content:center;
@@ -482,12 +479,11 @@ flex-direction: column;
 #cardC4 {
   min-width: 248px;
   height: 340px;
-  border-radius: 2%;
+  border-radius: 3%;
 background-image: url('../img/carrot.png');
 background-position: center;
    background-size: cover;
   box-shadow: 0 6px 12px rgba(103, 103, 103, 0.1);
-  padding: 16px;
   display: flex;
  align-content: center;
 justify-content:center;
@@ -501,12 +497,11 @@ flex-direction: column;
 #cardC4 {
   min-width: 248px;
   height: 340px;
-  border-radius: 2%;
+  border-radius: 3%;
 background-image: url('../img/trifle.png');
 background-position: center;
    background-size: cover;
   box-shadow: 0 6px 12px rgba(103, 103, 103, 0.1);
-  padding: 16px;
   display: flex;
  align-content: center;
 justify-content:center;
@@ -518,12 +513,11 @@ flex-direction: column;
 #cardC5 {
   min-width: 248px;
   height: 340px;
-  border-radius: 2%;
+  border-radius: 3%;
 background-image: url('../img/cupcakeC.png');
 background-position: center;
    background-size: cover;
   box-shadow: 0 6px 12px rgba(103, 103, 103, 0.1);
-  padding: 16px;
   display: flex;
  align-content: center;
 justify-content:center;
@@ -535,12 +529,11 @@ flex-direction: column;
 #cardC6{
   min-width: 248px;
   height: 340px;
-  border-radius: 2%;
+  border-radius: 3%;
 background-image: url('../img/applepie.png');
 background-position: center;
    background-size: cover;
   box-shadow: 0 6px 12px rgba(103, 103, 103, 0.1);
-  padding: 16px;
   display: flex;
  align-content: center;
 justify-content:center;
@@ -552,12 +545,11 @@ flex-direction: column;
 #cardC7{
   min-width: 248px;
   height: 340px;
-  border-radius: 2%;
+  border-radius: 3%;
 background-image: url('../img/flanC.png');
 background-position: center;
    background-size: cover;
   box-shadow: 0 6px 12px rgba(103, 103, 103, 0.1);
-  padding: 16px;
   display: flex;
  align-content: center;
 justify-content:center;
@@ -569,12 +561,11 @@ flex-direction: column;
 #cardC8{
   min-width: 248px;
   height: 340px;
-  border-radius: 2%;
+  border-radius: 3%;
 background-image: url('../img/carrot.png');
 background-position: center;
    background-size: cover;
   box-shadow: 0 6px 12px rgba(103, 103, 103, 0.1);
-  padding: 16px;
   display: flex;
  align-content: center;
 justify-content:center;
@@ -587,12 +578,11 @@ flex-direction: column;
 #cardC9{
   min-width: 248px;
   height: 340px;
-  border-radius: 2%;
+  border-radius: 5%;
 background-image: url('../img/chcolateckae.png');
 background-position: center;
    background-size: cover;
   box-shadow: 0 6px 12px rgba(103, 103, 103, 0.1);
-  padding: 16px;
   display: flex;
  align-content: center;
 justify-content:center;
@@ -620,15 +610,14 @@ flex-direction: column;
 
 
 #ButtonAddC {
-
+  margin-top: auto;
    justify-content: center;
    display: flex; 
-   margin-top: auto;
 }
 
 #ButtonAddC button{
 
-    width: 220px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: none;
