@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mensaje enviado</title>
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .dialogo {
+      background-color: #ffffff;
+      border: 2px solid #4CAF50;
+      border-left: 10px solid #4CAF50;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .dialogo.error {
+      border-left-color: #f44336;
+      border-color: #f44336;
+    }
+
+    .dialogo h2 {
+      margin-top: 0;
+      color: #4CAF50;
+    }
+
+    .dialogo.error h2 {
+      color: #f44336;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .dialogo.error .btn {
+      background-color: #f44336;
+    }
+  </style>
+</head>
+<body>
+  <div id="mensaje" class="dialogo">
+    <h2>Mensaje enviado correctamente</h2>
+    <p>Gracias por contactarnos. Te responderemos pronto.</p>
+    <button class="btn" onclick="window.location.href='/'">Volver al inicio</button>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const estado = urlParams.get('estado');
+
+    if (estado === 'error') {
+      const div = document.getElementById('mensaje');
+      div.classList.add('error');
+      div.innerHTML = `
+        <h2>Ocurrió un error</h2>
+        <p>Tu mensaje no pudo ser enviado. Intenta nuevamente.</p>
+        <button class="btn" onclick="window.location.href='/Contactanos'">Volver</button>
+      `;
+    }
+  </script>
+</body>
+</html>

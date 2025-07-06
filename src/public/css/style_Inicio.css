@@ -259,15 +259,11 @@ body {
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     padding: 20px 0;
-    scrollbar-width: none;
-}
-
-.flex::-webkit-scrollbar {
-    display: none;
+    overflow-x: visible;
 }
 
 /* Sección ¿Qué Ofrecemos? */
@@ -281,9 +277,9 @@ body {
 }
 
 .div-ofrecemos {
-    width: 400px;
+    flex: 1 1 300px;
+    max-width: 400px;
     padding: 10px;
-    min-width: 350px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -328,14 +324,14 @@ body {
 }
 
 .div-nuevos {
+    flex: 1 1 300px;
+    max-width: 330px;
     background-color: #ffffff;
     border-radius: 25px;
     display: block;
     text-decoration: none;
     padding: 25px;
     margin: 10px;
-    width: 330px;
-    min-width: 300px;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -394,7 +390,7 @@ body {
     font-size: 22px;
 }
 
-/* Sección Testimonios */
+/* Sección Testimonios (sin cambios) */
 .section-testimonios {
     position: relative;
     max-width: 1200px;
@@ -501,95 +497,7 @@ body {
     right: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .div-ofrecemos {
-        width: 350px;
-        min-width: 300px;
-    }
-    
-    .div-ofrecemos img {
-        width: 250px;
-    }
-}
-
-@media (max-width: 768px) {
-    .top-nav {
-        flex-direction: column;
-        height: auto;
-        gap: 15px;
-        padding: 15px 0;
-    }
-    
-    .location-nav, .correo-nav {
-        margin: 0;
-    }
-    
-    .nav-link {
-        margin-left: 20px;
-        gap: 20px;
-    }
-    
-    .banner-inicio h1 {
-        font-size: 50px;
-    }
-    
-    .banner-inicio p {
-        font-size: 18px;
-    }
-    
-    .h1-subtitulos {
-        font-size: 32px;
-    }
-    
-    .div-ofrecemos, .div-nuevos {
-        min-width: 280px;
-    }
-    
-    .testimonios-carousel > div {
-        min-width: 280px;
-        padding: 25px;
-    }
-    
-    .section-testimonios button {
-        width: 40px;
-        height: 40px;
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-link {
-        gap: 10px;
-        margin-left: 10px;
-        font-size: 12px;
-    }
-    
-    .banner-inicio {
-        height: 350px;
-    }
-    
-    .banner-inicio h1 {
-        font-size: 40px;
-    }
-    
-    .h1-subtitulos {
-        font-size: 28px;
-    }
-    
-    .div-ofrecemos h2 {
-        font-size: 22px;
-    }
-    
-    .div-nuevos {
-        min-width: 260px;
-    }
-    
-    .section-testimonios button {
-        display: none;
-    }
-}
-
+/* Footer (sin cambios) */
 .section-footer{
     background-color: #ffffff;
     text-align: center;
@@ -617,40 +525,40 @@ span{
     padding: 0px;
 }
 
-  .ul {
+.ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  .li {
+.li {
     margin-right: 30px; 
     padding: 0px;
     margin-top: 10px;
-  }
+}
 
-  .container{
+.container{
     justify-content: center;
     display: flex;
-  }
+}
 
-  .hr-footer{
+.hr-footer{
     margin-top: 30px;
     width: 90%;
     background-color: #DE839E;
     color: #DE839E;
     border: none;
     height: 3px;
-  }
+}
 
-    .hr-con{
+.hr-con{
     margin: 0px 0px 30px 0px;
     width: 80px;
     height: 3px;
     background-color: #DE839E;
     color: #DE839E;
     border: none;
-  }
+}
 
 .div-footer{
     text-decoration: none;
@@ -686,4 +594,99 @@ footer{
 
 header{
     background-color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .top-nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+    
+    .location-nav, .correo-nav {
+        margin: 10px 0;
+    }
+    
+    .main-nav {
+        flex-direction: column;
+    }
+    
+    .nav-link {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 10px 0;
+    }
+    
+    .nav-icon {
+        margin: 15px 0;
+    }
+    
+    .div-ofrecemos {
+        width: 350px;
+        min-width: 300px;
+    }
+    
+    .div-ofrecemos img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-inicio {
+        height: auto;
+        padding: 30px 4%;
+        text-align: center;
+    }
+    
+    .banner-inicio h1 {
+        font-size: 2.5rem;
+    }
+    
+    .banner-inicio p {
+        font-size: 1.2rem;
+    }
+    
+    .h1-subtitulos {
+        font-size: 1.8rem;
+    }
+    
+    .div-ofrecemos, .div-nuevos {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        gap: 10px;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    
+    .banner-inicio {
+        height: 350px;
+    }
+    
+    .banner-inicio h1 {
+        font-size: 2rem;
+    }
+    
+    .h1-subtitulos {
+        font-size: 1.5rem;
+    }
+    
+    .div-ofrecemos h2 {
+        font-size: 1.4rem;
+    }
+    
+    .div-nuevos {
+        min-width: 260px;
+    }
+    
+    .button-correo {
+        width: 160px;
+        font-size: 14px;
+    }
 }

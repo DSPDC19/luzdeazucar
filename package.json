@@ -13,10 +13,16 @@
   "license": "ISC",
   "packageManager": "pnpm@10.11.0",
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.6.1",
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "nodemailer": "^6.10.1",
+    "safer-buffer": "^2.1.2"
   },
   "devDependencies": {
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.9.3",
     "nodemon": "^3.1.10"
   }
 }
