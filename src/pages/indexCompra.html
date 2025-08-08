@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+    <link rel="stylesheet" href="./css/style_Compra.css" type="text/css">
+</head>
+    <header>
+        <!--Primera parte de la barra de navegacion -->
+        <div class="top-nav">
+            <!--Location links-->
+            <div class="location-nav"> 
+                <img src="./img/Location.png" alt="LocationIcon" id="LocationIcon">
+                <a href="https://mapcarta.com/es/W153866620#:~:text=Universidad%20Apec%20es%20una%20universidad%20en%20Santo%20Domingo,%28DNCD%29%2C%20as%C3%AD%20como%20de%20Hotel%20Barcel%C3%B3%20Santo%20Domingo." id="locationLink">Santo Domingo <br> Av. Maximo Gomez Esq. Mexico</a>
+            </div>
+
+            <!--logo-->
+            <div class="logo-nav">
+                <img src="./img/LogoIcon .jpg" alt="LogoIcon" id="logo-nav">
+            </div>
+            
+            <!--Boton correo-->
+            <div class="correo-nav">
+                <button type="button" class="button-correo" onclick="window.location.href='/Contactanos'">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#currentColor">
+                        <path d="M146.67-160q-27 0-46.84-19.83Q80-199.67 80-226.67v-506.66q0-27 19.83-46.84Q119.67-800 146.67-800h666.66q27 0 46.84 19.83Q880-760.33 880-733.33v506.66q0 27-19.83 46.84Q840.33-160 813.33-160H146.67ZM480-454.67 146.67-670v443.33h666.66V-670L480-454.67Zm0-66.66 330.67-212H150l330 212ZM146.67-670v-63.33V-226.67-670Z"/>
+                    </svg> 
+                    ESCRIBENOS
+                </button>
+            </div>
+        </div>
+        <hr class="linea">
+        
+        
+        <nav class="main-nav">
+            <ul class="nav-link">
+                <li><a href="/">INICIO</a></li>
+                <li><a href="/Menu">RINCÓN DE AZÚCAR</a></li>
+                <li><a href="/SobreNosotros">SOBRE NOSOTROS</a></li>
+                <li><a href="/Contactanos" >CONTACTANOS</a></li>
+            </ul>
+           
+            <div class="nav-icon">
+                <a href="/Compra" class="active"><img src="./img/CarIcon.png" alt="CarIcon"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-inicio">
+            <article>
+                <h1>Comprar</h1>
+            </article>
+        </section>
+
+        <div class="divContenidoCompra">
+        <section>
+            <h1>CONFIRMAR COMPRA</h1>
+            <h3>TOTAL DE LA COMPRA: RD$ 1,400  </h3>
+        </section>
+
+        <section>
+            <h2>DETALLES DE PAGO</h2>
+            <hr>
+            <article>
+                <h3>TIPO DE TARJETA *</h3>
+                <div class="flex">
+                    <div class="tarjeta">
+                        <input type="radio" name="metodo_pago">
+                        <img src="./img/visa.svg" alt="Visa" width="30px" height="30px" >
+                        <p> Visa</p>
+                    </div>
+                    <div class="tarjeta">                 
+                        <input type="radio" name="metodo_pago">
+                        <img src="./img/Mastercard.png" alt="Mastercard" width="30px" height="30px">
+                        <p>Mastercard</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h3>NÚMERO DE TARJETA *</h3>
+                <input type="text" class="inputDirreciongrande" placeholder="1111 2222 3333 4444" >
+            </article>
+            <article>
+                <h3>FECHA DE EXPIRACIÓN *</h3>
+                <div>
+                    <input type="text" class="inputDirrecion" placeholder="Mes">
+                    <input type="text" class="inputDirrecion" placeholder="Año">
+                </div>
+            </article>
+            <article>
+                <h3>CVN *</h3>
+                <input type="text" class="inputDirrecion" placeholder="123">
+            </article>
+        </section>
+
+        <section>
+            <h2>DIRECCIÓN DE ENVIO</h2>
+            <hr>
+                <form>
+                    <div class="form-group">
+                        <label>NOMBRE COMPLETO</label>
+                        <input type="text" name="nombre" />
+                    </div>
+                    <div class="form-group">
+                        <label>E-MAIL</label>
+                        <input type="email" name="email" />
+                    </div>
+                    <div class="form-group">
+                        <label>TELÉFONO</label>
+                        <input type="tel" name="telefono" />
+                    </div>
+                    <div class="form-group">
+                        <label >DIRECCIÓN</label>
+                        <input type="text"  name="direccion" />
+                    </div>
+                    <div class="form-group full">
+                        <label>CIUDAD</label>
+                        <input type="text">
+                    </div>
+                </form>
+        </section>
+
+        <section class="flex">
+            <button class="button" onclick="comprar()" >PAGAR</button>
+            <button class="buttonCancel" onclick="window.location.href='/'" >CANCELAR</button>
+        </section>
+        </div>
+            <div id="overlay">
+            <div id="popup">
+                <p>Ha realizado la compra exitosamente</p>
+                <button onclick="cerrarPopup()" class="button">Aceptar</button>
+            </div>
+        </div>
+    </main>
+   <script src="./js/scriptCompra.js"></script>
+    </html>

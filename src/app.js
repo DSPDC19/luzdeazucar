@@ -33,10 +33,14 @@ app.get('/Menu', (req, res) => {
 app.get('/Contactanos', (req, res) => { 
   res.sendFile(path.join(__dirname, 'pages', 'indexContactanos.html'));
 }); 
+app.get('/Compra', (req, res) => { 
+  res.sendFile(path.join(__dirname, 'pages', 'indexCompra.html'));
+}); 
 
-app.get('/sobre-nosotros', (req, res) => {
+app.get('/SobreNosotros', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'indexAboutUs.html'));
 });
+
 app.get('/Dialogo', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'Dialogo.html'));
 });

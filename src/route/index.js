@@ -14,5 +14,12 @@ router.get("/Contactanos", (req, res) => {
     res.render("./pages/indexContactanos");
 });
 
+router.get("/Compra", (req, res) => { 
+    res.render("./pages/indexCompra");
+});
+router.get("/SobreNosotros", (req, res) => { 
+    res.render("./pages/indexAboutUs");
+});
+
 
  export default router;
