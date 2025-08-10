@@ -23,7 +23,7 @@
 
             <!--logo-->
             <div class="logo-nav">
-                <img src="./img/LogoIcon .jpg" alt="LogoIcon" id="logo-nav">
+                <a href="/"><img src="./img/LogoIcon .jpg" alt="LogoIcon" id="logo-nav"></a>
             </div>
             <!--Boton correo-->
             <div class="correo-nav">
@@ -47,7 +47,7 @@
                 <li><a href="/Contactanos">CONTACTANOS</a></li>
             </ul>
             <div class="nav-icon">
-                <a href="/Compra"><img src="./img/CarIcon.png" alt="CarIcon"></a>
+                <button><a href="/Cart"><img src="./img/CarIcon.png" alt="CarIcon"></a></button>
             </div>
         </nav>
     </header>
@@ -141,7 +141,9 @@
 
             <!--Cards individuales-->
             <div class="card">
-
+                <div class="type-product">
+                    <h3> Postre</h3>
+                </div>
                 <!--BROWNIES-->
 
                 <!--Contenedor de la imagen-->
@@ -149,7 +151,7 @@
                     <img src="./img/brownies.png" alt="">
                 </div>
                 <!--Contenedor del H2-->
-                <div id="NameProduct">
+                <div class="NameProduct" id="product1" data-name="BROWNIES" data-price="50">
                     <h2> BROWNIES</h2>
                 </div>
                 <!--Contenedor del precio-->
@@ -158,7 +160,7 @@
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class ="LabelAdd">Agregar</button>
                 </div>
             </div>
 
@@ -166,12 +168,15 @@
             <!--OTRO PRODUCTO-->
 
             <div class="card">
+                <div class="type-product">
+                    <h3> Postre</h3>
+                </div>
                 <!--Contenedor de la imagen-->
                 <div id="imagenproducts">
                     <img src="./img/palmeritas.png" alt="">
                 </div>
                 <!--Contenedor del H2-->
-                <div id="NameProduct">
+                <div class="NameProduct" id="product2" data-name="PALMERITAS" data-price="60">
                     <h2> PALMERITAS</h2>
                 </div>
                 <!--Contenedor del precio-->
@@ -180,7 +185,7 @@
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class="LabelAdd">Agregar</button>
                 </div>
             </div>
 
@@ -188,44 +193,50 @@
             <!--OTRO PRODUCTO-->
 
             <div class="card">
-
+                <div class="type-product">
+                    <h3> Postre</h3>
+                </div>
                 <!--Contenedor de la imagen-->
                 <div id="imagenproducts">
                     <img src="./img/galleta.png" alt="">
                 </div>
                 <!--Contenedor del H2-->
-                <div id="NameProduct">
+                <div class="NameProduct" id="product3" data-name="GALLETAS" data-price="35">
                     <h2>GALLETAS CON CHISPAS</h2>
                 </div>
                 <!--Contenedor del precio-->
-                <div id="PriceProduct">
+                <div class="PriceProduct">
                     <h2> RD$35</h2>
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class="LabelAdd">Agregar</button>
                 </div>
             </div>
 
 
             <!--OTRO PRODUCTO-->
 
-            <div class="card">
+            <div class="card" >
+                  <div class="type-product">
+                    <h3> Postre</h3>
+                </div>
                 <!--Contenedor de la imagen-->
                 <div id="imagenproducts">
                     <img src="./img/Canela.png" alt="">
                 </div>
+              
                 <!--Contenedor del H2-->
-                <div id="NameProduct">
+                <div class="NameProduct" id="product4" data-name="ROLLITO DE CANELA" data-price="100">
                     <h2>ROLLITO DE CANELA</h2>
                 </div>
                 <!--Contenedor del precio-->
-                <div id="PriceProduct">
+                <div class="PriceProduct">
                     <h2> RD$100</h2>
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class="LabelAdd" id="LabelAdd4">Agregar</button>
                 </div>
             </div>
             <!--Otro producto-->
@@ -241,7 +252,7 @@
                     <img src="./img/donasC.png" alt="">
                 </div>
                 <!--Contenedor del H2-->
-                <div id="NameProduct">
+                <div id="NameProduct"  id="product5" data-name="DONA DE CHOCOLATE" data-price="60">
                     <h2>CHOCOLATE</h2>
                 </div>
                 <!--Contenedor del precio-->
@@ -250,11 +261,12 @@
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class="LabelAdd">Agregar</button>
                 </div>
             </div>
             <!--Otro producto-->
             <div class="card">
+               
                 <!--Contenedor de la titulo-->
                 <div class="type-product">
                     <h3> Donas</h3>
@@ -273,7 +285,7 @@
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class="LabelAdd">Agregar</button>
                 </div>
             </div>
 
@@ -298,7 +310,7 @@
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class="LabelAdd">Agregar</button>
                 </div>
             </div>
 
@@ -323,7 +335,7 @@
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class="LabelAdd">Agregar</button>
                 </div>
             </div>
 
@@ -347,7 +359,7 @@
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class="LabelAdd">Agregar</button>
                 </div>
             </div>
 
@@ -371,7 +383,7 @@
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class="LabelAdd">Agregar</button>
                 </div>
             </div>
 
@@ -395,7 +407,7 @@
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class="LabelAdd">Agregar</button>
                 </div>
             </div>
             <!--Otro producto-->
@@ -418,7 +430,7 @@
                 </div>
                 <!--Contenedor del botton-->
                 <div id="ButtonAdd">
-                    <button id="LabelAdd">Agregar</button>
+                    <button class="LabelAdd">Agregar</button>
                 </div>
             </div>
         </div>
@@ -465,6 +477,8 @@
     <p>© 2025, Designed By Grupo No1</p>
 </footer>
     <script src="./js/scriptMenu.js"></script>
+    <div id="add-to-cart-message" class="add-to-cart-message"></div>
+
 </body>
 
 </html>

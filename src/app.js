@@ -45,6 +45,10 @@ app.get('/Dialogo', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'Dialogo.html'));
 });
 
+app.get('/Cart', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'indexCart.html'));
+});
+
 
 // Ruta para enviar correo
 app.post('/enviar-correo', async (req, res) => {

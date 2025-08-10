@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compra</title>
-    <link rel="stylesheet" href="./css/style_Compra.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="./css/style_Cart.css" type="text/css">
+    <title>Shopping Cart</title>
+    </head>
+    <body>
     <header>
         <!--Primera parte de la barra de navegacion -->
         <div class="top-nav">
@@ -32,7 +33,7 @@
         </div>
         <hr class="linea">
         
-        
+        <!--Opciones de navegacion -->
         <nav class="main-nav">
             <ul class="nav-link">
                 <li><a href="/">INICIO</a></li>
@@ -46,95 +47,41 @@
             </div>
         </nav>
     </header>
+     <div class="banner-car">
+        <h1>Caja de Antojos</h1>
+    </div>
+    <div id="pedidoContainer" class="pedido-container">
+  <!-- Productos agregados aparecerán aquí -->
+<section class="cart-section">
+  
 
-    <main>
-        <section class="banner-inicio">
-            <article>
-                <h1>Comprar</h1>
-            </article>
-        </section>
+  <div class="cart-container">
+    
+    <!-- Cabecera de columnas -->
+    <div class="cart-header">
+      <span class="cart-header-name">Producto</span>
+      <span class="cart-header-quantity">Cantidad</span>
+      <span class="cart-header-price">Subtotal</span>
+    </div>
 
-        <div class="divContenidoCompra">
-        <section>
-            <h1>CONFIRMAR COMPRA</h1>
-            <h3>TOTAL DE LA COMPRA: <span id="total-compra"></span> </h3>
-        </section>
+    <!-- Productos añadidos dinámicamente -->
+    <div id="cart-items" class="cart-items"></div>
 
-        <section>
-            <h2>DETALLES DE PAGO</h2>
-            <hr>
-            <article>
-                <h3>TIPO DE TARJETA *</h3>
-                <div class="flex">
-                    <div class="tarjeta">
-                        <input type="radio" name="metodo_pago">
-                        <img src="./img/visa.svg" alt="Visa" width="30px" height="30px" >
-                        <p> Visa</p>
-                    </div>
-                    <div class="tarjeta">                 
-                        <input type="radio" name="metodo_pago">
-                        <img src="./img/Mastercard.png" alt="Mastercard" width="30px" height="30px">
-                        <p>Mastercard</p>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <h3>NÚMERO DE TARJETA *</h3>
-                <input type="text" class="inputDirreciongrande" placeholder="1111 2222 3333 4444" >
-            </article>
-            <article>
-                <h3>FECHA DE EXPIRACIÓN *</h3>
-                <div>
-                    <input type="text" class="inputDirrecion" placeholder="Mes">
-                    <input type="text" class="inputDirrecion" placeholder="Año">
-                </div>
-            </article>
-            <article>
-                <h3>CVN *</h3>
-                <input type="text" class="inputDirrecion" placeholder="123">
-            </article>
-        </section>
+    <!-- Total general -->
+    <div class="cart-total">
+      <strong>Total:</strong> <span id="cart-total-price">RD$ 0.00</span>
+    </div>
 
-        <section>
-            <h2>DIRECCIÓN DE ENVIO</h2>
-            <hr>
-                <form>
-                    <div class="form-group">
-                        <label>NOMBRE COMPLETO</label>
-                        <input type="text" name="nombre" />
-                    </div>
-                    <div class="form-group">
-                        <label>E-MAIL</label>
-                        <input type="email" name="email" />
-                    </div>
-                    <div class="form-group">
-                        <label>TELÉFONO</label>
-                        <input type="tel" name="telefono" />
-                    </div>
-                    <div class="form-group">
-                        <label >DIRECCIÓN</label>
-                        <input type="text"  name="direccion" />
-                    </div>
-                    <div class="form-group full">
-                        <label>CIUDAD</label>
-                        <input type="text">
-                    </div>
-                </form>
-        </section>
+    <!-- Botón de comprar -->
+    <div class="cart-button">
+      <button id="buy-button">COMPRAR</button>
+    </div>
+  </div>
+</section>
 
-        <section class="flex">
-            <button class="button" onclick="comprar()" >PAGAR</button>
-            <button class="buttonCancel" onclick="window.location.href='/'" >CANCELAR</button>
-        </section>
-        </div>
-            <div id="overlay">
-            <div id="popup">
-                <p>Ha realizado la compra exitosamente</p>
-                <button onclick="cerrarPopup()" class="button">Aceptar</button>
-            </div>
-        </div>
+<div id="add-to-cart-message" class="cart-popup-message">¡Producto añadido al carrito!</div>
 
-         <div class="footer"> 
+ <div class="footer"> 
 
   <section class="section-footer">
     <hr class="hr-footer"> 
@@ -173,9 +120,10 @@
         </div>
     </article>
 </section>
-    </main>
-    <footer class="footer">
+<footer class="footer">
     <p>© 2025, Designed By Grupo No1</p>
 </footer>
-   <script src="./js/scriptCompra.js"></script>
-    </html>
+</div> 
+<script src="./js/scriptCart.js"></script>    
+</body>
+</html> 

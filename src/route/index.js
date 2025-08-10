@@ -21,5 +21,8 @@ router.get("/SobreNosotros", (req, res) => {
     res.render("./pages/indexAboutUs");
 });
 
+router.get("/Cart", (req, res) => { 
+    res.render("./pages/indexCart");
+});
 
  export default router;

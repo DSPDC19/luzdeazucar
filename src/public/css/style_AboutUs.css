@@ -187,32 +187,25 @@ body {
 
 /* Banner principal */
 .banner-inicio {
-    padding-left: 4%;
-    padding-top: 5%;
-    position: relative;
+  display: flex;               /* Activa flexbox */
+  justify-content: center;     /* Centra horizontalmente */
+  align-items: center;         /* Centra verticalmente */
     width: 95%;
-    height: 450px;
-    margin: 0 auto;
-    background-image: url(../img//banner-us.png);
-    background-position: center;
-    background-size: cover;
+  height: 450px;
+  margin: 0 auto;
+  background-image: url(../img/banner-us.png);
+  background-position: center;
+  background-size: cover;
+
 }
 
-.banner-inicio h1 {
-    font-family: "Lavishly Yours", cursive;
-    font-size: 70px;
-    font-weight: 650;
-    color: white;
-    margin: 0%;
+.h1banner {
+  font-family: "Poppins", sans-serif;
+font-size: 50px;
+color: white;
+  margin: 0;
 }
 
-.banner-inicio p {
-    font-family: "Poppins", sans-serif;
-    font-size: 23px;
-    color: white;
-    padding: 0%;
-    margin: 0%;
-}
 
 .button {
     color: #fff;
@@ -234,10 +227,10 @@ body {
     background-color: #c76b89;
 }
 
-/* Secciones comunes */
-.h1-subtitulos {
+/* Secciones comunes */ 
+ h2 {
     color: #9BC855;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     margin: 30px 0px 25px 0px;
     position: relative;
@@ -246,15 +239,17 @@ body {
     font-weight: 600;
 }
 
-.h1-subtitulos::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
-    background-color: #DE839E;
+#ImagenHistoria{
+    background-image:url(../img/imgHistoria.jpg);
+    margin: 0;
+    display: flex;
+    justify-content: center;     
+  align-items: center;  
+ width: 90%;
+ height: 300px;
+background-position: center;
+  background-size: cover;
+
 }
 
 .flex {
@@ -410,7 +405,7 @@ header{
         font-size: 1.2rem;
     }
     
-    .h1-subtitulos {
+    .subtitulos {
         font-size: 1.8rem;
     }
 }
@@ -430,7 +425,7 @@ header{
         font-size: 2rem;
     }
     
-    .h1-subtitulos {
+    .subtitulos {
         font-size: 1.5rem;
     }
     .div-nuevos {
